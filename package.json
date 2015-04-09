@@ -3,11 +3,12 @@
   "description": "",
   "version": "1.0.0",
   "author": "Rick Blalock",
-  "license": "",
+  "license": "Apache-2.0",
   "framework": "none",
   "keywords": [
     "appcelerator",
-    "arrow"
+    "arrow",
+    "box"
   ],
   "repository": {},
   "private": true,
