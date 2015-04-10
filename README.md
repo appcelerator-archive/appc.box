@@ -54,26 +54,6 @@ model.findOne('DOCUMENT_ID_HERE', function(err, instance) {
 	instance.save(function(saveErr, savedRecord) {});
 });
 
-// Get document contents
-model.query({
-	where: {
-		id: 'DOCUMENT_ID_HERE',
-		content: true
-	}
-}, function(err, data) {
-});
-
-// Get document thumbnail
-model.query({
-	where: {
-		id: 'DOCUMENT_ID_HERE',
-		thumbnails: true,
-		width: 50,
-		height: 50
-	}
-}, function(err, data) {
-});
-
 // Create a view session
 model.create({
 	doc_id: 'DOCUMENT_ID_HERE'
