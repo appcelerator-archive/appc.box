@@ -55,7 +55,9 @@ model.findOne('DOCUMENT_ID_HERE', function(err, instance) {
 });
 
 // Create a view session
-model.create({
+var sessionModel = Arrow.getModel('appc.box/documents');
+
+sessionModel.create({
 	doc_id: 'DOCUMENT_ID_HERE'
 }, function(err, instance) {
 });
