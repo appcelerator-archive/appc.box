@@ -109,51 +109,6 @@ describe('Connector', function() {
 		});
 	});
 
-	it('Should be able to query document content', function(next) {
-		var model = Arrow.getModel('appc.box/documents');
-
-		model.query({
-			where: {
-				id: createdDocument.getPrimaryKey(),
-				content: true
-			}
-		}, function(err, data) {
-			should(err).be.not.ok;
-			should(data).be.an.Object;
-
-			next();
-		});
-
-		//server.getAPI('/api/appc.box/documents/query').execute({
-		//	where: {
-		//		id: createdDocument.getPrimaryKey(),
-		//		content: true
-		//	}
-		//}, function(err, data) {
-		//	console.log(err, data);
-		//
-		//	next();
-		//});
-	});
-
-	it('Should be able to query document thumbnails', function(next) {
-		var model = Arrow.getModel('appc.box/documents');
-
-		model.query({
-			where: {
-				id: createdDocument.getPrimaryKey(),
-				thumbnails: true,
-				width: 50,
-				height: 50
-			}
-		}, function(err, data) {
-			should(err).be.not.ok;
-			should(data).be.an.Object;
-
-			next();
-		});
-	});
-
 	it('Should be able to create a session', function(next) {
 		var model = Arrow.getModel('appc.box/sessions');
 
