@@ -1,11 +1,15 @@
 {
-  "type": "connector",
-  "group": "arrow",
-  "access": "public",
-  "owners": [
-    "jhaynie@appcelerator.com",
-    "dtoth@appcelerator.com",
-    "mgoff@appcelerator.com",
-    "rblalock@appcelerator.com"
-  ]
+    "type": "connector",
+    "group": "arrow",
+    "access": "public",
+    "owners": [
+        "jhaynie@appcelerator.com",
+        "dtoth@appcelerator.com",
+        "mgoff@appcelerator.com",
+        "rblalock@appcelerator.com",
+        "imuschenetz@appcelerator.com"
+    ],
+    "assets": {
+        "small_logo": "docs/logo.jpg"
+    }
 }

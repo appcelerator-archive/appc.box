@@ -1,35 +1,35 @@
 {
-  "name": "appc.box",
-  "description": "",
-  "version": "1.0.0",
-  "author": "Rick Blalock",
-  "license": "Apache-2.0",
-  "framework": "none",
-  "keywords": [
-    "appcelerator",
-    "arrow",
-    "box"
-  ],
-  "repository": {},
-  "private": true,
-  "dependencies": {
-    "async": "^0.9.0",
-    "box-view": "^1.2.0",
-    "lodash": "^2.4.1",
-    "pkginfo": "^0.3.0"
-  },
-  "devDependencies": {
-    "arrow": "*",
-    "grunt": "^0.4.5",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-kahvesi": "^0.1.0",
-    "grunt-mocha-test": "^0.12.0",
-    "mocha": "^1.21.4",
-    "request": "^2.55.0",
-    "should": "^4.0.4"
-  },
-  "scripts": {
-    "test": "grunt"
-  }
+    "name": "appc.box",
+    "description": "Connector for the Box View API.",
+    "version": "1.0.0",
+    "author": "Rick Blalock",
+    "license": "Apache-2.0",
+    "framework": "none",
+    "keywords": [
+        "appcelerator",
+        "arrow",
+        "box"
+    ],
+    "repository": {},
+    "private": true,
+    "dependencies": {
+        "async": "^0.9.0",
+        "box-view": "^1.2.0",
+        "lodash": "^2.4.1",
+        "pkginfo": "^0.3.0"
+    },
+    "devDependencies": {
+        "arrow": "*",
+        "grunt": "^0.4.5",
+        "grunt-contrib-clean": "^0.6.0",
+        "grunt-contrib-jshint": "^0.10.0",
+        "grunt-kahvesi": "^0.1.0",
+        "grunt-mocha-test": "^0.12.0",
+        "mocha": "^1.21.4",
+        "request": "^2.55.0",
+        "should": "^4.0.4"
+    },
+    "scripts": {
+        "test": "grunt"
+    }
 }

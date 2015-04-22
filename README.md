@@ -1,4 +1,4 @@
-# Box.net View API Arrow Connector 
+# Box.net View API Arrow Connector
 
 ## Installation
 
@@ -66,7 +66,7 @@ sessionModel.create({
 ```
 
 ## Creating a model
-If you are not extending off the two pre-build models (mentioned above), you'll need to provide some metadata 
+If you are not extending off the two pre-build models (mentioned above), you'll need to provide some metadata
 in your model to ensure the connector knows which endpoints to point to.  For example, if you want a custom model
 to point to the documents endpoint of the Box View API:
 
