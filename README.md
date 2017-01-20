@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-$ appc install connector/appc.box --save
+$ appc install connector/appc.box
 ```
 
 In your Arrow configuration, ensure you have the following:
