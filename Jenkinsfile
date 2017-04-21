@@ -8,7 +8,7 @@ timestamps {
 		}
 
 		stage('Configuration') {
-			sh "echo \"module.exports = { connectors: { 'appc.box': { modelAutogen: true, generateModelsFromSchema: true, apiKey: 'oc7na5n3jyakfymx0o6wq8j3xmqhx6ez' } } };\" > conf/local.js"
+			sh "echo \"module.exports = { connectors: { 'appc.box': { modelAutogen: true, generateModelsFromSchema: true, apiKey: <YOUR_API_KEY> } } };\" > conf/local.js"
 		}
 
 		buildConnector {
