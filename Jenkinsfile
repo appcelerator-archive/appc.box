@@ -8,7 +8,7 @@ timestamps {
 		}
 
 		stage('Configuration') {
-			sh "echo \"module.exports = { connectors: { 'appc.box': { apiKey: <YOUR_API_KEY> } } };\" > conf/local.js"
+			sh "echo \"module.exports = { connectors: { 'appc.box': { apiKey: '<YOUR_API_KEY>' } } };\" > conf/local.js"
 		}
 
 		buildConnector {
