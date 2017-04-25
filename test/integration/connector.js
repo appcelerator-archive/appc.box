@@ -10,7 +10,11 @@ var should = require('should'),
 // So we use the same model instance in multiple tests
 var createdDocument, currentSession;
 
-describe('Connector', function() {
+describe('Connector', function(next) {
+	beforeEach(function() {
+		this.timeout = 50000;
+		setTimeout(next, 5000);
+	})
 
 	before(function(next) {
 		server.start(function (err) {
@@ -117,7 +121,7 @@ describe('Connector', function() {
 		}, function(err, instance) {
 			should(err).be.not.ok;
 			should(instance).be.an.Object;
-
+			console.dir(arguments);
 			currentSession = instance;
 
 			next();
