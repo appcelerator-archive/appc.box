@@ -1,7 +1,7 @@
 {
   "name": "appc.box",
   "description": "Connector for the Box View API.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "Rick Blalock",
   "license": "Apache-2.0",
   "framework": "none",
