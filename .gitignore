@@ -2,3 +2,6 @@
 .idea
 logs
 node_modules
+.nyc_output
+scan-retire.txt
+coverage
