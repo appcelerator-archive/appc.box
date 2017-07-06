@@ -10,6 +10,10 @@
     "arrow",
     "box"
   ],
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
   "repository": {},
   "private": true,
   "dependencies": {
@@ -20,6 +24,12 @@
   },
   "devDependencies": {
     "arrow": "*",
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.0.0",
+    "babel-istanbul": "^0.12.1",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-stage-2": "^6.22.0",
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-jshint": "^0.10.0",
@@ -39,9 +49,12 @@
   },
   "scripts": {
     "start": "appc run",
+    "build": "npm run clean && npm run build:dev && npm run security",
+    "build:dev": "npm run build:dist",
+    "build:dist": "babel -d ./dist ./lib",
     "lint": "standard --fix",
-    "security": "retire --exitwith 0 --outputpath scan-retire.txt && nsp check --output writefile --warn-only",
-    "clean": "rimraf ./tmp",
+    "security": "retire --exitwith 0 --outputpath scan-retire.json && nsp check --output json > scan-nsp.json",
+    "clean": "rimraf ./tmp && rimraf dist/* coverage/*",
     "test": "npm run security && npm run test:unit && npm run clean",
     "test:coverage": "nyc check-coverage --lines 95 --functions 95 --branches 85 --statements 95",
     "test:unit": "tap ./test/unit/* --color --bail --coverage --coverage-report=html && npm run test:coverage",

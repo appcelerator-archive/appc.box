@@ -1,7 +1,30 @@
-/conf/local.js
-.idea
+# Logs
 logs
+*.log
+
+# Dependency directories
 node_modules
-.nyc_output
-scan-retire.txt
+
+# Coverage
 coverage
+
+# vscode directory
+.vscode/*
+
+# nyc test coverage
+.nyc_output
+
+# retire and nsp files
+scan-nsp.json
+scan-retire.json
+
+# Others
+*.tgz
+.DS_Store
+conf/local.js
+dist
+._*
+_tmp
+undefined.metadata
+npm-debug.log.*
+conf/schema.json
